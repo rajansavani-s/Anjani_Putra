@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anjani Putra - Premium 3D Printing Solutions. Precision In Every Dimension. Rapid prototyping, mechanical parts, customized gifts and more.">
+    <title>Anjani Putra | Precision In Every Dimension</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- ============================================
+         HEADER / NAVBAR
+         ============================================ -->
+    <nav class="main-navbar" id="mainNavbar">
+        <div class="navbar-inner">
+            <!-- Brand -->
+            <a href="index.html" class="navbar-brand">
+                <img src="images/iconlogo.png" alt="Anjani Putra" class="logo-img">
+                <span>ANJANI</span> PUTRA
+            </a>
+
+            <!-- Center Nav Links -->
+            <div class="navbar-center" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+
+            <!-- Right -->
+            <div class="navbar-right">
+                <a href="tel:+919727689920" class="btn-call">
+                    <i class="fas fa-phone"></i>
+                    +91 9727689920
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Call Button -->
+    <a href="tel:+919727689920" class="btn-call mobile-call-btn" style="display: none;">
+        <i class="fas fa-phone"></i>
+        Call Now
+    </a>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero-section" id="home">
+        <!-- Background Blobs -->
+        <div class="hero-bg-blobs">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-blob hero-blob-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Content -->
+                <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-label">
+                        <i class="fas fa-cube"></i>
+                        ANJANI PUTRA
+                    </div>
+
+                    <h1 class="hero-title">
+                        Transform Ideas Into<br>
+                        Real World Products<br>
+                        With <span class="highlight">Precision 3D Printing</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        From rapid prototyping and mechanical parts to personalized gifts and educational models, we help businesses, creators and innovators bring their concepts to life with high quality 3D printing solutions.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary-custom">
+                            Get Quote
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#products" class="btn-secondary-custom">
+                            View Products
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <span class="trust-check"><i class="fas fa-check"></i></span>
+                            High Precision Printing
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-check"><i class="fas fa-check"></i></span>
+                            Fast Turnaround
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-check"><i class="fas fa-check"></i></span>
+                            Custom Manufacturing
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-check"><i class="fas fa-check"></i></span>
+                            Small Batch Production
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual -->
+                <div class="hero-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-3d-scene">
+                        <!-- Orbital circles -->
+                        <div class="scene-circle"></div>
+                        <div class="scene-circle-2"></div>
+
+                        <!-- Center glow -->
+                        <div class="center-glow"></div>
+
+                        <!-- Floating objects -->
+                        <div class="floating-object obj-printer">
+                            <div class="object-icon">🖨️</div>
+                            <span class="object-label">3D Printer</span>
+                        </div>
+
+                        <div class="floating-object obj-component">
+                            <div class="object-icon">⚙️</div>
+                            <span class="object-label">Component</span>
+                        </div>
+
+                        <div class="floating-object obj-moon">
+                            <div class="object-icon">🌙</div>
+                            <span class="object-label">Moon Lamp</span>
+                        </div>
+
+                        <div class="floating-object obj-nameplate">
+                            <div class="object-icon">🪧</div>
+                            <span class="object-label">Name Plate</span>
+                        </div>
+
+                        <div class="floating-object obj-prototype">
+                            <div class="object-icon">🔬</div>
+                            <span class="object-label">Prototype</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         STATISTICS SECTION
+         ============================================ -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="500">0</span>+
+                    </div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="100">0</span>+
+                    </div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="50">0</span>+
+                    </div>
+                    <div class="stat-label">Custom Product Designs</div>
+                </div>
+
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <div class="stat-number">3-5 Days</div>
+                    <div class="stat-label">Average Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT PREVIEW SECTION
+         ============================================ -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Image -->
+                <div class="about-image-wrapper" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image">
+                        <span class="printer-visual">🏭</span>
+                    </div>
+                    <div class="about-image-badge">
+                        <div class="badge-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div>
+                            <div class="badge-text">Trusted Since 2020</div>
+                            <div class="badge-subtext">500+ Projects Delivered</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">
+                        Precision Engineering<br>
+                        Meets <span class="gradient-text">Creativity</span>
+                    </h2>
+
+                    <p class="about-text">
+                        Anjani Putra specializes in professional 3D printing solutions for industries, students, engineers, product designers and gifting businesses. We combine advanced manufacturing techniques with creative design expertise to deliver prototypes, customized products and production-ready components.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Industrial Grade Quality
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Advanced 3D Technology
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Custom Design Support
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Pan India Delivery
+                        </div>
+                    </div>
+
+                    <a href="#about" class="btn-primary-custom">
+                        Learn More About Us
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="services-header" data-aos="fade-up">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Our <span class="gradient-text">Expertise</span></h2>
+                <p class="section-subtitle">Complete 3D printing solutions from concept to production.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Printing</h3>
+                    <p>High quality custom 3D printing for prototypes, models and production parts.</p>
+                    <span class="service-arrow">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rapid Prototyping</h3>
+                    <p>Transform product ideas into physical prototypes quickly and accurately.</p>
+                    <span class="service-arrow">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-gears"></i>
+                    </div>
+                    <h3>Mechanical Parts</h3>
+                    <p>Durable functional components designed for engineering and industrial applications.</p>
+                    <span class="service-arrow">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>3D Modeling</h3>
+                    <p>Professional CAD and 3D design services for custom requirements.</p>
+                    <span class="service-arrow">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Educational Models</h3>
+                    <p>Detailed educational and demonstration models for schools and institutions.</p>
+                    <span class="service-arrow">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Small Batch Production</h3>
+                    <p>Cost effective manufacturing for limited production requirements.</p>
+                    <span class="service-arrow">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Customized Gift Products</h3>
+                    <p>Unique personalized gifts created through advanced 3D printing technology.</p>
+                    <span class="service-arrow">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FEATURED PRODUCTS SECTION
+         ============================================ -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="products-header" data-aos="fade-up">
+                <span class="section-label">Our Products</span>
+                <h2 class="section-title">Featured <span class="gradient-text">3D Printed Products</span></h2>
+                <p class="section-subtitle">Explore some of our most popular creations.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="product-image" style="background: linear-gradient(135deg, #EEF2FF, #F5F3FF);">
+                        <span class="product-badge">Popular</span>
+                        <span class="product-emoji">🌙</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>MoonAura Lamp</h4>
+                        <p>Elegant lunar-inspired lamp with ambient glow</p>
+                        <button class="btn-view-details" data-product="moonauro">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image" style="background: linear-gradient(135deg, #F0F9FF, #ECFEFF);">
+                        <span class="product-emoji">🏷️</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Glow Tag</h4>
+                        <p>Personalized glow-in-the-dark identity tags</p>
+                        <button class="btn-view-details" data-product="glowtag">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FDF2F8, #FCE7F3);">
+                        <span class="product-badge">New</span>
+                        <span class="product-emoji">🌸</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>NameBloom</h4>
+                        <p>Custom name art with elegant bloom design</p>
+                        <button class="btn-view-details" data-product="namebloom">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image" style="background: linear-gradient(135deg, #F0FDF4, #DCFCE7);">
+                        <span class="product-emoji">🌀</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>NameTwist</h4>
+                        <p>Twisted spiral nameplate with modern aesthetics</p>
+                        <button class="btn-view-details" data-product="nametwist">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFFBEB, #FEF3C7);">
+                        <span class="product-emoji">🌕</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>MemoryMoon</h4>
+                        <p>Memorable moon lamp keepsake for loved ones</p>
+                        <button class="btn-view-details" data-product="memorymoon">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image" style="background: linear-gradient(135deg, #F5F3FF, #EDE9FE);">
+                        <span class="product-badge">Trending</span>
+                        <span class="product-emoji">📱</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>ScanCharm</h4>
+                        <p>Custom phone charm with QR code integration</p>
+                        <button class="btn-view-details" data-product="scancharm">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image" style="background: linear-gradient(135deg, #F8FAFC, #F1F5F9);">
+                        <span class="product-emoji">🎮</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>ScanStand</h4>
+                        <p>Premium 3D printed device stand and holder</p>
+                        <button class="btn-view-details" data-product="scanstand">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SPECIAL PRODUCT EXPERIENCE
+         ============================================ -->
+    <section class="product-experience-section" id="product-experience">
+        <div class="container">
+            <div class="services-header" data-aos="fade-up">
+                <span class="section-label">Premium Experience</span>
+                <h2 class="section-title">Explore <span class="gradient-text">In Detail</span></h2>
+                <p class="section-subtitle">Interact with our products using our premium 360&deg; viewer.</p>
+            </div>
+
+            <!-- Product Selector Tabs -->
+            <div class="product-selector-tabs" data-aos="fade-up" data-aos-delay="100">
+                <button class="product-tab active" data-product-name="MoonAura Lamp" data-emoji="🌙" data-desc="The MoonAura Lamp is a stunning lunar-inspired piece crafted with precision 3D printing technology. Its detailed surface texture mimics the real moon, creating a beautiful ambient glow for any room.">
+                    MoonAura Lamp
+                </button>
+                <button class="product-tab" data-product-name="NameBloom" data-emoji="🌸" data-desc="NameBloom is an elegant personalized name art piece featuring a beautiful bloom design. Each letter is carefully crafted with smooth curves and precise detailing.">
+                    NameBloom
+                </button>
+                <button class="product-tab" data-product-name="ScanCharm" data-emoji="📱" data-desc="ScanCharm is a custom phone charm with integrated QR code technology. A perfect blend of personalization and functionality for the modern user.">
+                    ScanCharm
+                </button>
+                <button class="product-tab" data-product-name="Glow Tag" data-emoji="🏷️" data-desc="Glow Tags are personalized identity accessories that glow in the dark. Made with premium glow-in-the-dark filament for a unique, eye-catching effect.">
+                    Glow Tag
+                </button>
+            </div>
+
+            <div class="product-experience-grid">
+                <!-- Left: 360 Viewer -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="viewer-360-container">
+                        <!-- Viewer Header -->
+                        <div class="viewer-360-header">
+                            <h4>
+                                <i class="fas fa-cube"></i>
+                                360&deg; Product Viewer
+                            </h4>
+                            <div class="viewer-360-controls">
+                                <button class="viewer-control-btn" id="zoomToggle" title="Zoom">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="viewer-control-btn" id="rotateToggle" title="Auto Rotate">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                                <button class="viewer-control-btn" id="fullscreenToggle" title="Fullscreen">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Viewport -->
+                        <div class="viewer-360-viewport" id="viewer360">
+                            <div class="viewer-360-object" id="viewerObject">
+                                <div class="object-face" id="objectFace">
+                                    <span class="face-emoji" id="viewerEmoji">🌙</span>
+                                    <span class="face-label" id="viewerFaceLabel">Front View</span>
+                                </div>
+                            </div>
+                            <div class="zoom-lens" id="zoomLens"></div>
+                        </div>
+
+                        <!-- Zoom Indicator -->
+                        <div class="zoom-indicator">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <span>Drag to rotate &bull; Hover to zoom &bull; Click angles below</span>
+                        </div>
+                    </div>
+
+                    <!-- Angle Selector -->
+                    <div class="angle-selector">
+                        <button class="angle-btn active" data-angle="0" data-label="Front View">
+                            <div class="angle-icon">👁️</div>
+                            <div class="angle-label">Front</div>
+                        </button>
+                        <button class="angle-btn" data-angle="90" data-label="Right Side">
+                            <div class="angle-icon">➡️</div>
+                            <div class="angle-label">Right</div>
+                        </button>
+                        <button class="angle-btn" data-angle="180" data-label="Back View">
+                            <div class="angle-icon">🔄</div>
+                            <div class="angle-label">Back</div>
+                        </button>
+                        <button class="angle-btn" data-angle="270" data-label="Left Side">
+                            <div class="angle-icon">⬅️</div>
+                            <div class="angle-label">Left</div>
+                        </button>
+                        <button class="angle-btn" data-angle="45" data-label="Top View">
+                            <div class="angle-icon">⬆️</div>
+                            <div class="angle-label">Top</div>
+                        </button>
+                        <button class="angle-btn" data-angle="315" data-label="Perspective">
+                            <div class="angle-icon">💎</div>
+                            <div class="angle-label">3D</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Product Details -->
+                <div class="product-experience-details" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 id="expProductName">MoonAura Lamp</h3>
+                    <div class="product-price">Starting from &#8377;599</div>
+
+                    <p class="product-desc" id="expProductDesc">
+                        The MoonAura Lamp is a stunning lunar-inspired piece crafted with precision 3D printing technology. Its detailed surface texture mimics the real moon, creating a beautiful ambient glow for any room.
+                    </p>
+
+                    <div class="experience-features">
+                        <div class="exp-feature">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>Precision Layer Detail</span>
+                        </div>
+                        <div class="exp-feature">
+                            <i class="fas fa-palette"></i>
+                            <span>Multiple Color Options</span>
+                        </div>
+                        <div class="exp-feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>LED Light Included</span>
+                        </div>
+                        <div class="exp-feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Premium PLA Material</span>
+                        </div>
+                        <div class="exp-feature">
+                            <i class="fas fa-ruler"></i>
+                            <span>Customizable Size</span>
+                        </div>
+                        <div class="exp-feature">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>Quality Guaranteed</span>
+                        </div>
+                    </div>
+
+                    <div class="product-experience-actions">
+                        <a href="#contact" class="btn-primary-custom">
+                            Request Quote
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:+919727689920" class="btn-secondary-custom">
+                            <i class="fas fa-phone"></i>
+                            Call to Order
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHY CHOOSE US
+         ============================================ -->
+    <section class="why-section" id="why">
+        <div class="container">
+            <div class="why-header" data-aos="fade-up">
+                <span class="section-label">Why Us</span>
+                <h2 class="section-title">Why Clients Choose <span class="gradient-text">Anjani Putra</span></h2>
+                <p class="section-subtitle">We deliver excellence in every dimension of 3D printing.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="why-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Precision Manufacturing</h3>
+                    <p>Industry-leading accuracy with layer resolutions down to 0.1mm for flawless results.</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored 3D printing solutions designed to meet your exact specifications and requirements.</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon">
+                        <i class="fas fa-bolt-lightning"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Rapid turnaround times with most projects completed within 3-5 business days.</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon">
+                        <i class="fas fa-indian-rupee-sign"></i>
+                    </div>
+                    <h3>Affordable Production</h3>
+                    <p>Competitive pricing without compromising on quality or precision of output.</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Expert Design Support</h3>
+                    <p>Professional design consultation and 3D modeling assistance from experienced engineers.</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Reliable Quality</h3>
+                    <p>Consistent quality control ensures every product meets our high standards before delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROCESS SECTION
+         ============================================ -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="process-header" data-aos="fade-up">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Our <span class="gradient-text">Process</span></h2>
+                <p class="section-subtitle">From concept to delivery, we ensure quality at every step.</p>
+            </div>
+
+            <div class="process-timeline" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <span class="step-icon">💬</span>
+                    <div class="step-title">Share Your Idea</div>
+                    <div class="step-desc">Tell us about your concept</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <span class="step-icon">🤝</span>
+                    <div class="step-title">Design & Consultation</div>
+                    <div class="step-desc">We refine your vision</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <span class="step-icon">📐</span>
+                    <div class="step-title">3D Modeling</div>
+                    <div class="step-desc">Creating your digital model</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <span class="step-icon">🖨️</span>
+                    <div class="step-title">Printing & Production</div>
+                    <div class="step-desc">Bringing it to life</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <span class="step-icon">🔍</span>
+                    <div class="step-title">Quality Inspection</div>
+                    <div class="step-desc">Ensuring perfection</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <span class="step-icon">📦</span>
+                    <div class="step-title">Delivery</div>
+                    <div class="step-desc">Safe & fast shipping</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CLIENT TESTIMONIALS
+         ============================================ -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header" data-aos="fade-up">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+                <p class="section-subtitle">Real feedback from our satisfied customers.</p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Anjani Putra delivered my engineering project prototype in just 3 days. The print quality was outstanding with incredibly fine details. Highly recommended for engineering students!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av1">RK</div>
+                            <div class="author-info">
+                                <div class="author-name">Rahul Kumar</div>
+                                <div class="author-role">Engineering Student</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "As a product designer, I need precision and quality. Anjani Putra consistently delivers both. Their 3D modeling support helped me refine my designs before production."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av2">PS</div>
+                            <div class="author-info">
+                                <div class="author-name">Priya Sharma</div>
+                                <div class="author-role">Product Designer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "I ordered customized moon lamps and name plates for my gift shop. The quality is premium and my customers love them. Great partnership for bulk orders!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av3">AJ</div>
+                            <div class="author-info">
+                                <div class="author-name">Amit Joshi</div>
+                                <div class="author-role">Gift Shop Owner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "We needed rapid prototypes for our startup's investor demo. Anjani Putra turned our CAD files into beautiful physical models within 48 hours. Absolutely fantastic service!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av4">NK</div>
+                            <div class="author-info">
+                                <div class="author-name">Neha Kapoor</div>
+                                <div class="author-role">Startup Founder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" id="sliderPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="slider-dot active" data-index="0"></span>
+                        <span class="slider-dot" data-index="1"></span>
+                    </div>
+                    <button class="slider-btn" id="sliderNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CALL TO ACTION
+         ============================================ -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-box" data-aos="zoom-in" data-aos-duration="800">
+                <div class="cta-content">
+                    <h2>Ready To Build Something Amazing?</h2>
+                    <p>
+                        Whether you need a prototype, engineering component or personalized gift, we are ready to turn your vision into reality.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/919727689920?text=Hi%20Anjani%20Putra%2C%20I%27d%20like%20to%20get%20a%20quote." target="_blank" class="btn-outline-white">
+                            <i class="fab fa-whatsapp"></i>
+                            Chat on WhatsApp
+                        </a>
+                        <a href="tel:+919727689920" class="btn-primary-custom" style="background: white; color: var(--primary); box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                            <i class="fas fa-phone"></i>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/iconlogo.png" alt="Anjani Putra" class="logo-img">
+                        ANJANI <span>PUTRA</span>
+                    </div>
+                    <p class="footer-tagline">"Precision In Every Dimension"</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919727689920" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">3D Printing</a></li>
+                        <li><a href="services.html">Rapid Prototyping</a></li>
+                        <li><a href="services.html">Mechanical Parts</a></li>
+                        <li><a href="services.html">3D Modeling</a></li>
+                        <li><a href="services.html">Educational Models</a></li>
+                        <li><a href="services.html">Customized Gifts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919727689920">+91 9727689920</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:anjani.putra.177@gmail.com">anjani.putra.177@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/919727689920" target="_blank">WhatsApp Us</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <a href="#" target="_blank">@anjani.putra</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anjani Putra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

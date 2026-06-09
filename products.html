@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Products - Anjani Putra. Premium 3D printed products including moon lamps, name plates, QR charms and custom creations.">
+    <title>Products | Anjani Putra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="preloader" id="preloader"><div class="preloader-spinner"></div></div>
+
+<!-- HEADER -->
+<nav class="main-navbar scrolled" id="mainNavbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand"><img src="images/iconlogo.png" alt="Anjani Putra" class="logo-img"><span>ANJANI</span> PUTRA</a>
+        <div class="navbar-center" id="navMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="products.html" class="nav-link active">Products</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+        <div class="navbar-right">
+            <a href="tel:+919727689920" class="btn-call"><i class="fas fa-phone"></i> +91 9727689920</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="page-hero-bg"><div class="page-hero-shape page-hero-shape-1"></div><div class="page-hero-shape page-hero-shape-2"></div><div class="page-hero-shape page-hero-shape-3"></div><div class="page-hero-pattern"></div></div>
+    <div class="container">
+        <div class="products-hero-grid">
+            <div class="page-hero-content" style="text-align:left;" data-aos="fade-right">
+                <span class="section-label">Our Products</span>
+                <h1 class="section-title">Custom Creations Built<br>With <span class="gradient-text">Precision</span></h1>
+                <p class="section-subtitle" style="margin:0;">Explore personalized gifts, decorative products and custom manufactured creations produced through advanced 3D printing technology.</p>
+            </div>
+            <div class="products-hero-right" data-aos="fade-left">
+                <div class="hero-float-orbit"></div>
+                <div class="hero-float-item hfi-1"><span class="float-emoji">🌙</span><span class="float-label">Moon Lamp</span></div>
+                <div class="hero-float-item hfi-2"><span class="float-emoji">📱</span><span class="float-label">QR Product</span></div>
+                <div class="hero-float-item hfi-3"><span class="float-emoji">🪧</span><span class="float-label">Name Plate</span></div>
+                <div class="hero-float-item hfi-4"><span class="float-emoji">⚙️</span><span class="float-label">Mech Part</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FILTER BAR -->
+<section class="section-padding" style="background:var(--white); padding-bottom:20px;">
+    <div class="container">
+        <div class="filter-bar" data-aos="fade-up">
+            <div class="filter-categories">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="personalized">Personalized Gifts</button>
+                <button class="filter-btn" data-filter="moon">Moon Collection</button>
+                <button class="filter-btn" data-filter="name">Name Collection</button>
+                <button class="filter-btn" data-filter="qr">QR Collection</button>
+                <button class="filter-btn" data-filter="custom">Custom Orders</button>
+            </div>
+            <div class="filter-right">
+                <div class="search-box"><i class="fas fa-search"></i><input type="text" id="productSearch" placeholder="Search products..."></div>
+                <select class="sort-select" id="sortSelect"><option>Newest</option><option>Popular</option><option>Price: Low to High</option><option>Price: High to Low</option></select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section-padding" style="background:var(--white); padding-top:20px;">
+    <div class="container">
+        <div class="products-page-grid" id="productsGrid">
+
+            <!-- MoonAura -->
+            <div class="product-page-card" data-category="moon personalized" data-aos="fade-up">
+                <div class="ppc-image" style="background:linear-gradient(135deg,#EEF2FF,#F5F3FF);" onclick="openProductModal('moonauro')">
+                    <span class="ppc-badge">Popular</span>
+                    <span class="ppc-delivery-badge"><i class="fas fa-truck"></i> 3-4 Days</span>
+                    <span class="ppc-emoji">🌙</span>
+                    <div class="ppc-actions">
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();openProductModal('moonauro')"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="ppc-info">
+                    <div class="ppc-category">Moon Collection</div>
+                    <h3>MoonAura Lamp</h3>
+                    <p class="ppc-desc">Beautiful illuminated moon lamp created using precision 3D printing technology.</p>
+                    <div class="ppc-sizes"><span class="ppc-size-tag">3"</span><span class="ppc-size-tag">4"</span><span class="ppc-size-tag">5"</span><span class="ppc-size-tag">6"</span></div>
+                    <div class="ppc-meta"><span class="ppc-price"><span class="price-from">From </span>₹129 - ₹779</span></div>
+                    <div class="ppc-btns">
+                        <button class="ppc-btn-primary" onclick="openProductModal('moonauro')">View Details</button>
+                        <a href="https://wa.me/919727689920?text=Hi, I'm interested in MoonAura Lamp" target="_blank" class="ppc-btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glow Tag -->
+            <div class="product-page-card" data-category="personalized qr" data-aos="fade-up" data-aos-delay="100">
+                <div class="ppc-image" style="background:linear-gradient(135deg,#F0F9FF,#ECFEFF);" onclick="openProductModal('glowtag')">
+                    <span class="ppc-delivery-badge"><i class="fas fa-truck"></i> 2-3 Days</span>
+                    <span class="ppc-emoji">🏷️</span>
+                    <div class="ppc-actions">
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();openProductModal('glowtag')"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="ppc-info">
+                    <div class="ppc-category">QR Collection</div>
+                    <h3>Glow Tag</h3>
+                    <p class="ppc-desc">Custom photo keychain featuring personalized engraved memories.</p>
+                    <div class="ppc-sizes"><span class="ppc-size-tag">60-70mm</span></div>
+                    <div class="ppc-meta"><span class="ppc-price">₹99</span></div>
+                    <div class="ppc-btns">
+                        <button class="ppc-btn-primary" onclick="openProductModal('glowtag')">View Details</button>
+                        <a href="https://wa.me/919727689920?text=Hi, I'm interested in Glow Tag" target="_blank" class="ppc-btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NameBloom -->
+            <div class="product-page-card" data-category="name personalized" data-aos="fade-up" data-aos-delay="200">
+                <div class="ppc-image" style="background:linear-gradient(135deg,#FDF2F8,#FCE7F3);" onclick="openProductModal('namebloom')">
+                    <span class="ppc-badge">New</span>
+                    <span class="ppc-delivery-badge"><i class="fas fa-truck"></i> 3-4 Days</span>
+                    <span class="ppc-emoji">🌸</span>
+                    <div class="ppc-actions">
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();openProductModal('namebloom')"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="ppc-info">
+                    <div class="ppc-category">Name Collection</div>
+                    <h3>NameBloom</h3>
+                    <p class="ppc-desc">Elegant personalized name display with decorative floral design.</p>
+                    <div class="ppc-sizes"><span class="ppc-size-tag">10"</span></div>
+                    <div class="ppc-meta"><span class="ppc-price">₹199</span></div>
+                    <div class="ppc-btns">
+                        <button class="ppc-btn-primary" onclick="openProductModal('namebloom')">View Details</button>
+                        <a href="https://wa.me/919727689920?text=Hi, I'm interested in NameBloom" target="_blank" class="ppc-btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NameTwist -->
+            <div class="product-page-card" data-category="name personalized" data-aos="fade-up">
+                <div class="ppc-image" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);" onclick="openProductModal('nametwist')">
+                    <span class="ppc-delivery-badge"><i class="fas fa-truck"></i> 3-4 Days</span>
+                    <span class="ppc-emoji">🌀</span>
+                    <div class="ppc-actions">
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();toggleWishlist(this)"><i class="far fa-heart"></i></button>
+                        <button class="ppc-action-btn" onclick="event.stopPropagation();openProductModal('nametwist')"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="ppc-info">
+                    <div class="ppc-category">Name Collection</div>
+                    <h3>NameTwist</h3>
+                    <p class="ppc-desc">Premium custom name display crafted with modern typography.</p>
+                    <div class="ppc-sizes"><span class="ppc-size-tag">8"</span><span class="ppc-size-tag">9"</span><span class="ppc-size-tag">10"</span><span class="ppc-size-tag">12"</span></div>
+                    <div class="ppc-meta"><span class="ppc-price"><span class="price-from">From </span>₹319 - ₹829</span></div>
+                    <div class="ppc-btns">
+                        <button class="ppc-btn-primary" onclick="openProductModal('nametwist')">View Details</button>
+                        <a href="https://wa.me/919727689920?text=Hi, I'm interested in NameTwist" target="_blank" class="ppc-btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MemoryMoon -->
+            <div class="product-page-card" data-category="moon personalized" data-aos="fade-up" data-aos-delay="100">
+                <div class="ppc-image" style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7);">
+                    <span class="ppc-coming-soon">Coming Soon</span>
+                    <span class="ppc-emoji">🌕</span>
+                </div>
+                <div class="ppc-info">
+                    <div class="ppc-category">Moon Collection</div>
+                    <h3>MemoryMoon</h3>
+                    <p class="ppc-desc">Personalized moon lamp featuring custom photo engraving.</p>
+                    <div class="ppc-meta"><span class="ppc-price" style="color:var(--gray-400);">Coming Soon</span></div>
+                </div>
+            </div>
+
+            <!-- ScanCharm -->
+            <div class="product-page-card" data-category="qr custom" data-aos="fade-up" data-aos-delay="200">
+                <div class="ppc-image" style="background:linear-gradient(135deg,#F5F3FF,#EDE9FE);">
+                    <span class="ppc-badge" style="background:var(--gradient-accent);">Trending</span>
+                    <span class="ppc-coming-soon">Coming Soon</span>
+                    <span class="ppc-emoji">📱</span>
+                </div>
+                <div class="ppc-info">
+                    <div class="ppc-category">QR Collection</div>
+                    <h3>ScanCharm</h3>
+                    <p class="ppc-desc">QR based custom charm for instant digital sharing.</p>
+                    <div class="ppc-meta"><span class="ppc-price" style="color:var(--gray-400);">Coming Soon</span></div>
+                </div>
+            </div>
+
+            <!-- ScanStand -->
+            <div class="product-page-card" data-category="qr custom" data-aos="fade-up" data-aos-delay="300">
+                <div class="ppc-image" style="background:linear-gradient(135deg,#F8FAFC,#F1F5F9);">
+                    <span class="ppc-coming-soon">Coming Soon</span>
+                    <span class="ppc-emoji">🎮</span>
+                </div>
+                <div class="ppc-info">
+                    <div class="ppc-category">QR Collection</div>
+                    <h3>ScanStand</h3>
+                    <p class="ppc-desc">QR display stand for businesses and personal branding.</p>
+                    <div class="ppc-meta"><span class="ppc-price" style="color:var(--gray-400);">Coming Soon</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 3D PRODUCT VIEWER -->
+<section class="viewer-3d-section" id="viewer3d">
+    <div class="container">
+        <div class="services-header" data-aos="fade-up">
+            <span class="section-label">Interactive Experience</span>
+            <h2 class="section-title">3D Product <span class="gradient-text">Viewer</span></h2>
+            <p class="section-subtitle">Rotate, zoom and explore our products in interactive 3D.</p>
+        </div>
+        <div class="viewer-3d-container" data-aos="fade-up">
+            <div class="viewer-3d-header">
+                <h3><i class="fas fa-cube"></i> Three.js Interactive Viewer</h3>
+                <div style="display:flex;gap:6px;">
+                    <button class="toolbar-btn active" onclick="switchViewerProduct('moon')" title="Moon Lamp">🌙</button>
+                    <button class="toolbar-btn" onclick="switchViewerProduct('gear')" title="Mechanical Part">⚙️</button>
+                    <button class="toolbar-btn" onclick="switchViewerProduct('nameplate')" title="Name Plate">🪧</button>
+                </div>
+            </div>
+            <div class="viewer-3d-viewport" id="threejsContainer"></div>
+            <div class="viewer-3d-toolbar">
+                <div class="toolbar-group">
+                    <button class="toolbar-btn" id="btnAutoRotate" onclick="toggleAutoRotate()" title="Auto Rotate"><i class="fas fa-sync-alt"></i></button>
+                    <button class="toolbar-btn" onclick="resetCamera()" title="Reset View"><i class="fas fa-home"></i></button>
+                    <button class="toolbar-btn" onclick="zoomIn()" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+                    <button class="toolbar-btn" onclick="zoomOut()" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+                    <button class="toolbar-btn" onclick="toggleFullscreen()" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                </div>
+                <div class="toolbar-hint"><i class="fas fa-mouse-pointer"></i> Drag to rotate &bull; Scroll to zoom &bull; Right-click to pan</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- IMAGE ZOOM SECTION -->
+<section class="section-padding" style="background:var(--white);">
+    <div class="container">
+        <div class="services-header" data-aos="fade-up">
+            <span class="section-label">Quality Inspection</span>
+            <h2 class="section-title">Zoom & <span class="gradient-text">Inspect</span></h2>
+            <p class="section-subtitle">Hover to magnify and inspect the quality and detail of our 3D prints.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;" data-aos="fade-up">
+            <div class="zoom-section" id="zoomArea1" style="height:400px;">
+                <div class="zoom-content">🌙</div>
+                <div class="zoom-lens-circle" id="zoomLens1"></div>
+                <div class="zoom-hint"><i class="fas fa-search-plus"></i> Hover to zoom &bull; 3x magnification</div>
+            </div>
+            <div class="zoom-section" id="zoomArea2" style="height:400px;">
+                <div class="zoom-content">⚙️</div>
+                <div class="zoom-lens-circle" id="zoomLens2"></div>
+                <div class="zoom-hint"><i class="fas fa-search-plus"></i> Hover to zoom &bull; 3x magnification</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT CUSTOMIZER -->
+<section class="section-padding" style="background:var(--light-gray);" id="customizer">
+    <div class="container">
+        <div class="services-header" data-aos="fade-up">
+            <span class="section-label">Customize</span>
+            <h2 class="section-title">Design Your <span class="gradient-text">Product</span></h2>
+            <p class="section-subtitle">Personalize your product with custom names, fonts and colors.</p>
+        </div>
+        <div class="customizer-grid" data-aos="fade-up">
+            <div class="customizer-preview">
+                <div class="preview-content">
+                    <div style="font-size:3rem;margin-bottom:16px;">🌸</div>
+                    <div class="preview-name" id="customizerPreview" style="font-family:'Inter',sans-serif;">Your Name</div>
+                    <div style="margin-top:12px;font-size:0.85rem;color:var(--gray-400);">Live Preview</div>
+                </div>
+            </div>
+            <div class="customizer-controls">
+                <div class="customizer-control-group">
+                    <label>Product Type</label>
+                    <div class="size-options">
+                        <button class="size-option active" onclick="selectCustomizerProduct(this,'NameBloom')">NameBloom</button>
+                        <button class="size-option" onclick="selectCustomizerProduct(this,'NameTwist')">NameTwist</button>
+                        <button class="size-option" onclick="selectCustomizerProduct(this,'Glow Tag')">Glow Tag</button>
+                        <button class="size-option" onclick="selectCustomizerProduct(this,'MoonAura')">MoonAura</button>
+                    </div>
+                </div>
+                <div class="customizer-control-group">
+                    <label>Your Name / Text</label>
+                    <input type="text" class="customizer-input" id="customNameInput" placeholder="Enter your name..." oninput="updateCustomizerPreview()">
+                </div>
+                <div class="customizer-control-group">
+                    <label>Font Style</label>
+                    <div class="font-options">
+                        <button class="font-option active" onclick="selectFont(this,'Inter')" style="font-family:Inter">Inter</button>
+                        <button class="font-option" onclick="selectFont(this,'serif')" style="font-family:serif">Serif</button>
+                        <button class="font-option" onclick="selectFont(this,'cursive')" style="font-family:cursive">Script</button>
+                        <button class="font-option" onclick="selectFont(this,'monospace')" style="font-family:monospace">Mono</button>
+                    </div>
+                </div>
+                <div class="customizer-control-group">
+                    <label>Color</label>
+                    <div class="color-options">
+                        <div class="color-option active" style="background:#111827;" onclick="selectColor(this,'#111827')"></div>
+                        <div class="color-option" style="background:#2563EB;" onclick="selectColor(this,'#2563EB')"></div>
+                        <div class="color-option" style="background:#7C3AED;" onclick="selectColor(this,'#7C3AED')"></div>
+                        <div class="color-option" style="background:#06B6D4;" onclick="selectColor(this,'#06B6D4')"></div>
+                        <div class="color-option" style="background:#10B981;" onclick="selectColor(this,'#10B981')"></div>
+                        <div class="color-option" style="background:#F59E0B;" onclick="selectColor(this,'#F59E0B')"></div>
+                    </div>
+                </div>
+                <div class="customizer-control-group">
+                    <label>Size</label>
+                    <div class="size-options">
+                        <button class="size-option" onclick="selectSize(this)">8 Inch</button>
+                        <button class="size-option active" onclick="selectSize(this)">10 Inch</button>
+                        <button class="size-option" onclick="selectSize(this)">12 Inch</button>
+                    </div>
+                </div>
+                <div style="display:flex;gap:12px;margin-top:8px;">
+                    <a href="https://wa.me/919727689920?text=Hi, I want to customize a product" target="_blank" class="btn-whatsapp" style="flex:1;text-align:center;justify-content:center;"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+                    <a href="contact.html" class="btn-primary-custom" style="flex:1;text-align:center;justify-content:center;">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT COMPARISON -->
+<section class="section-padding" style="background:var(--white);">
+    <div class="container">
+        <div class="services-header" data-aos="fade-up">
+            <span class="section-label">Compare</span>
+            <h2 class="section-title">Product <span class="gradient-text">Comparison</span></h2>
+        </div>
+        <div class="comparison-table-wrapper" data-aos="fade-up">
+            <table class="comparison-table">
+                <thead><tr><th>Feature</th><th>MoonAura</th><th>NameBloom</th><th>NameTwist</th><th>Glow Tag</th></tr></thead>
+                <tbody>
+                    <tr><td>Sizes Available</td><td>3" - 6"</td><td>10"</td><td>8" - 12"</td><td>60-70mm</td></tr>
+                    <tr><td>Price Range</td><td>₹129 - ₹779</td><td>₹199</td><td>₹319 - ₹829</td><td>₹99</td></tr>
+                    <tr><td>Material</td><td>Premium PLA</td><td>Premium PLA</td><td>Premium PLA</td><td>Glow PLA</td></tr>
+                    <tr><td>Customizable</td><td><i class="fas fa-check-circle comparison-check"></i></td><td><i class="fas fa-check-circle comparison-check"></i></td><td><i class="fas fa-check-circle comparison-check"></i></td><td><i class="fas fa-check-circle comparison-check"></i></td></tr>
+                    <tr><td>LED Light</td><td><i class="fas fa-check-circle comparison-check"></i></td><td><i class="fas fa-times-circle comparison-cross"></i></td><td><i class="fas fa-times-circle comparison-cross"></i></td><td><i class="fas fa-times-circle comparison-cross"></i></td></tr>
+                    <tr><td>Glow In Dark</td><td><i class="fas fa-times-circle comparison-cross"></i></td><td><i class="fas fa-times-circle comparison-cross"></i></td><td><i class="fas fa-times-circle comparison-cross"></i></td><td><i class="fas fa-check-circle comparison-check"></i></td></tr>
+                    <tr><td>Delivery</td><td>3-4 Days</td><td>3-4 Days</td><td>3-4 Days</td><td>2-3 Days</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- WHY OUR PRODUCTS -->
+<section class="section-padding" style="background:var(--light-gray);">
+    <div class="container">
+        <div class="services-header" data-aos="fade-up"><span class="section-label">Quality</span><h2 class="section-title">Why Our <span class="gradient-text">Products</span></h2></div>
+        <div class="why-grid" style="grid-template-columns:repeat(3,1fr);">
+            <div class="why-card" data-aos="fade-up"><div class="why-icon"><i class="fas fa-gem"></i></div><h3>Premium Quality Materials</h3><p>We use only high-grade PLA, ABS and specialty filaments for lasting quality.</p></div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="50"><div class="why-icon"><i class="fas fa-crosshairs"></i></div><h3>Precision Manufacturing</h3><p>Layer resolutions down to 0.1mm ensure exceptional detail and accuracy.</p></div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="100"><div class="why-icon"><i class="fas fa-wand-magic-sparkles"></i></div><h3>Custom Made Designs</h3><p>Every product can be personalized to match your unique vision.</p></div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="150"><div class="why-icon"><i class="fas fa-bolt-lightning"></i></div><h3>Fast Production</h3><p>Most products ready within 2-5 business days with careful quality checks.</p></div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="200"><div class="why-icon"><i class="fas fa-hand-sparkles"></i></div><h3>Careful Finishing</h3><p>Each product is hand-finished and inspected before delivery.</p></div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="250"><div class="why-icon"><i class="fas fa-headset"></i></div><h3>Reliable Support</h3><p>Dedicated support from order to delivery and beyond.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- CUSTOM ORDER -->
+<section class="section-padding" style="background:var(--white);">
+    <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" data-aos="fade-up">
+            <div>
+                <span class="section-label">Custom Orders</span>
+                <h2 class="section-title">Need Something <span class="gradient-text">Completely Custom?</span></h2>
+                <p style="font-size:1rem;color:var(--gray-500);line-height:1.8;margin-bottom:28px;">Share your idea, sketch or design and we will create a personalized solution tailored to your requirements.</p>
+                <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                    <a href="contact.html" class="btn-primary-custom"><i class="fas fa-cloud-arrow-up"></i> Upload Design</a>
+                    <a href="contact.html" class="btn-secondary-custom"><i class="fas fa-paper-plane"></i> Request Quote</a>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                <div style="background:var(--gradient-hero);border-radius:var(--radius-xl);padding:32px;text-align:center;border:1px solid var(--border);"><div style="font-size:2.5rem;margin-bottom:8px;">🏗️</div><div style="font-weight:700;font-size:0.9rem;">Prototypes</div></div>
+                <div style="background:var(--gradient-hero);border-radius:var(--radius-xl);padding:32px;text-align:center;border:1px solid var(--border);"><div style="font-size:2.5rem;margin-bottom:8px;">🎁</div><div style="font-weight:700;font-size:0.9rem;">Gift Items</div></div>
+                <div style="background:var(--gradient-hero);border-radius:var(--radius-xl);padding:32px;text-align:center;border:1px solid var(--border);"><div style="font-size:2.5rem;margin-bottom:8px;">⚙️</div><div style="font-weight:700;font-size:0.9rem;">Mech Parts</div></div>
+                <div style="background:var(--gradient-hero);border-radius:var(--radius-xl);padding:32px;text-align:center;border:1px solid var(--border);"><div style="font-size:2.5rem;margin-bottom:8px;">📐</div><div style="font-weight:700;font-size:0.9rem;">Architecture</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLIENT GALLERY -->
+<section class="section-padding" style="background:var(--light-gray);">
+    <div class="container">
+        <div class="services-header" data-aos="fade-up"><span class="section-label">Gallery</span><h2 class="section-title">Client <span class="gradient-text">Creations</span></h2><p class="section-subtitle">Real products made for our satisfied customers.</p></div>
+        <div class="gallery-grid" data-aos="fade-up">
+            <div class="gallery-item" onclick="openLightbox(0)"><span class="gallery-emoji">🌙</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+            <div class="gallery-item" onclick="openLightbox(1)" style="background:linear-gradient(135deg,#FDF2F8,#FCE7F3);"><span class="gallery-emoji">🌸</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+            <div class="gallery-item" onclick="openLightbox(2)" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);"><span class="gallery-emoji">🌀</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+            <div class="gallery-item" onclick="openLightbox(3)" style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7);"><span class="gallery-emoji">🌕</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+            <div class="gallery-item" onclick="openLightbox(4)" style="background:linear-gradient(135deg,#F5F3FF,#EDE9FE);"><span class="gallery-emoji">🏷️</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+            <div class="gallery-item" onclick="openLightbox(5)"><span class="gallery-emoji">⚙️</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+            <div class="gallery-item" onclick="openLightbox(6)" style="background:linear-gradient(135deg,#ECFEFF,#CFFAFE);"><span class="gallery-emoji">📱</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+            <div class="gallery-item" onclick="openLightbox(7)"><span class="gallery-emoji">🎮</span><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-padding" style="background:var(--white);">
+    <div class="container">
+        <div class="services-header" data-aos="fade-up"><span class="section-label">FAQ</span><h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2></div>
+        <div class="faq-container">
+            <div class="faq-item active" data-aos="fade-up"><button class="faq-question">Can I customize products?<i class="fas fa-chevron-down"></i></button><div class="faq-answer"><div class="faq-answer-inner">Yes. All our products support customization including names, colors, sizes and designs. Use our customizer above or contact us for complex requirements.</div></div></div>
+            <div class="faq-item" data-aos="fade-up"><button class="faq-question">Can I request a completely unique design?<i class="fas fa-chevron-down"></i></button><div class="faq-answer"><div class="faq-answer-inner">Absolutely. We specialize in custom orders. Share your concept and our team will bring it to life.</div></div></div>
+            <div class="faq-item" data-aos="fade-up"><button class="faq-question">How long does production take?<i class="fas fa-chevron-down"></i></button><div class="faq-answer"><div class="faq-answer-inner">Usually 2-5 days depending on complexity and quantity. Rush orders may be available.</div></div></div>
+            <div class="faq-item" data-aos="fade-up"><button class="faq-question">Do you support bulk orders?<i class="fas fa-chevron-down"></i></button><div class="faq-answer"><div class="faq-answer-inner">Yes. We offer competitive pricing for bulk and wholesale orders. Contact us for a custom quote.</div></div></div>
+            <div class="faq-item" data-aos="fade-up"><button class="faq-question">Can I preview my design before production?<i class="fas fa-chevron-down"></i></button><div class="faq-answer"><div class="faq-answer-inner">Yes. We provide digital previews and proofs before starting production to ensure your satisfaction.</div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" style="background:var(--light-gray);">
+    <div class="container">
+        <div class="cta-box" data-aos="zoom-in"><div class="cta-content"><h2>Ready To Create Something Unique?</h2><p>From personalized gifts to functional prototypes, let's build something amazing together.</p><div class="cta-buttons"><a href="contact.html" class="btn-outline-white"><i class="fas fa-shopping-bag"></i> Order Now</a><a href="contact.html" class="btn-primary-custom" style="background:white;color:var(--primary);box-shadow:0 10px 40px rgba(0,0,0,0.1);"><i class="fas fa-phone"></i> Contact Us</a></div></div></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><div class="footer-logo"><img src="images/iconlogo.png" alt="Anjani Putra" class="logo-img">ANJANI <span>PUTRA</span></div><p class="footer-tagline">"Precision In Every Dimension"</p><div class="footer-social"><a href="#"><i class="fab fa-instagram"></i></a><a href="https://wa.me/919727689920" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div>
+            <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">3D Printing</a></li><li><a href="services.html">Rapid Prototyping</a></li><li><a href="services.html">Mechanical Parts</a></li><li><a href="services.html">3D Modeling</a></li><li><a href="services.html">Educational Models</a></li><li><a href="services.html">Customized Gifts</a></li></ul></div>
+            <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+919727689920">+91 9727689920</a></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:anjani.putra.177@gmail.com">anjani.putra.177@gmail.com</a></div><div class="footer-contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/919727689920" target="_blank">WhatsApp Us</a></div><div class="footer-contact-item"><i class="fab fa-instagram"></i><a href="#">@anjani.putra</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Anjani Putra. All Rights Reserved.</p></div>
+    </div>
+</footer>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="product-modal-overlay" id="productModal">
+    <div class="product-modal">
+        <button class="modal-close" onclick="closeProductModal()"><i class="fas fa-times"></i></button>
+        <div class="modal-grid">
+            <div class="modal-viewer" id="modalViewer">
+                <div class="gallery-thumbs">
+                    <div class="gallery-thumb active" onclick="switchModalView('front')">👁️</div>
+                    <div class="gallery-thumb" onclick="switchModalView('side')">➡️</div>
+                    <div class="gallery-thumb" onclick="switchModalView('top')">⬆️</div>
+                    <div class="gallery-thumb" onclick="switchModalView('angle')">💎</div>
+                </div>
+                <span id="modalEmoji" style="font-size:7rem;">🌙</span>
+                <div class="modal-viewer-controls">
+                    <button onclick="rotateModalProduct(-1)" title="Rotate Left"><i class="fas fa-undo"></i></button>
+                    <button onclick="rotateModalProduct(0)" title="Reset"><i class="fas fa-home"></i></button>
+                    <button onclick="rotateModalProduct(1)" title="Rotate Right"><i class="fas fa-redo"></i></button>
+                    <button onclick="zoomModalProduct(1)" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+                    <button onclick="zoomModalProduct(-1)" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+                </div>
+            </div>
+            <div class="modal-details">
+                <div class="modal-category" id="modalCategory">MOON COLLECTION</div>
+                <h2 id="modalName">MoonAura Lamp</h2>
+                <div class="modal-price" id="modalPrice">₹129 - ₹779</div>
+                <p class="modal-desc" id="modalDesc">Beautiful illuminated moon lamp created using precision 3D printing technology. Available in multiple sizes with ambient LED lighting.</p>
+                <div class="modal-option-group"><label>Size</label><div class="size-options" id="modalSizes"><button class="size-option active">3 Inch</button><button class="size-option">4 Inch</button><button class="size-option">5 Inch</button><button class="size-option">6 Inch</button></div></div>
+                <div class="modal-option-group"><label>Color</label><div class="color-options"><div class="color-option active" style="background:#F5F5F4;"></div><div class="color-option" style="background:#FDE68A;"></div><div class="color-option" style="background:#BFDBFE;"></div></div></div>
+                <div class="modal-features"><div class="modal-feature"><i class="fas fa-check"></i> Premium PLA</div><div class="modal-feature"><i class="fas fa-check"></i> LED Included</div><div class="modal-feature"><i class="fas fa-check"></i> Customizable</div><div class="modal-feature"><i class="fas fa-check"></i> 3-4 Day Delivery</div></div>
+                <div class="modal-btns">
+                    <a href="https://wa.me/919727689920?text=Hi, I want to order" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Order Now</a>
+                    <a href="contact.html" class="btn-primary-custom"><i class="fas fa-paper-plane"></i> Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content" id="lightboxContent">🌙</div>
+    <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+// ---- Product Data ----
+var products = {
+    moonauro: { name:'MoonAura Lamp', emoji:'🌙', category:'MOON COLLECTION', price:'₹129 - ₹779', desc:'Beautiful illuminated moon lamp created using precision 3D printing technology. Available in multiple sizes with ambient LED lighting.', sizes:['3 Inch','4 Inch','5 Inch','6 Inch'], wa:'Hi, I\'m interested in MoonAura Lamp' },
+    glowtag: { name:'Glow Tag', emoji:'🏷️', category:'QR COLLECTION', price:'₹99', desc:'Custom photo keychain featuring personalized engraved memories. Glow-in-the-dark technology for unique visibility.', sizes:['60-70mm'], wa:'Hi, I\'m interested in Glow Tag' },
+    namebloom: { name:'NameBloom', emoji:'🌸', category:'NAME COLLECTION', price:'₹199', desc:'Elegant personalized name display with decorative floral design. Perfect for room decoration and gifting.', sizes:['10 Inch'], wa:'Hi, I\'m interested in NameBloom' },
+    nametwist: { name:'NameTwist', emoji:'🌀', category:'NAME COLLECTION', price:'₹319 - ₹829', desc:'Premium custom name display crafted with modern typography and twisted design aesthetics.', sizes:['8 Inch','9 Inch','10 Inch','12 Inch'], wa:'Hi, I\'m interested in NameTwist' }
+};
+var galleryEmojis = ['🌙','🌸','🌀','🌕','🏷️','⚙️','📱','🎮'];
+var currentLightbox = 0;
+var modalRotation = 0;
+var modalZoom = 1;
+
+// ---- Preloader ----
+$(window).on('load',function(){$('#preloader').addClass('hidden');});
+setTimeout(function(){$('#preloader').addClass('hidden');},3000);
+
+// ---- AOS Init ----
+AOS.init({duration:800,easing:'ease-out-cubic',once:true,offset:80});
+
+// ---- Navbar ----
+$(window).on('scroll',function(){$('#mainNavbar').toggleClass('scrolled',$(this).scrollTop()>50);});
+$('#mobileToggle').on('click',function(){$(this).toggleClass('active');$('#navMenu').toggleClass('active');});
+$('.navbar-center .nav-link').on('click',function(){$('#mobileToggle').removeClass('active');$('#navMenu').removeClass('active');});
+
+// ---- Filter ----
+$('.filter-btn').on('click',function(){
+    $('.filter-btn').removeClass('active');$(this).addClass('active');
+    var f=$(this).data('filter');
+    $('.product-page-card').each(function(){
+        var cats=$(this).data('category')||'';
+        $(this).toggle(f==='all'||cats.indexOf(f)>-1);
+    });
+});
+
+// ---- Search ----
+$('#productSearch').on('input',function(){
+    var q=$(this).val().toLowerCase();
+    $('.product-page-card').each(function(){
+        var text=$(this).text().toLowerCase();
+        $(this).toggle(text.indexOf(q)>-1);
+    });
+});
+
+// ---- Wishlist ----
+function toggleWishlist(btn){$(btn).toggleClass('wishlisted');var i=$(btn).find('i');i.toggleClass('far fa-heart');i.toggleClass('fas fa-heart');}
+
+// ---- Product Modal ----
+function openProductModal(id){
+    var p=products[id];if(!p)return;
+    $('#modalEmoji').text(p.emoji);$('#modalCategory').text(p.category);
+    $('#modalName').text(p.name);$('#modalPrice').text(p.price);$('#modalDesc').text(p.desc);
+    var sz='';p.sizes.forEach(function(s,i){sz+='<button class="size-option'+(i===0?' active':'')+'" onclick="$(\'.size-option\',this.parentNode).removeClass(\'active\');$(this).addClass(\'active\');">'+s+'</button>';});
+    $('#modalSizes').html(sz);$('#productModal').addClass('show');$('body').css('overflow','hidden');modalRotation=0;modalZoom=1;
+    var wa=p.wa;$('#productModal .btn-whatsapp').attr('href','https://wa.me/919727689920?text='+encodeURIComponent(wa));
+}
+function closeProductModal(){$('#productModal').removeClass('show');$('body').css('overflow','');}
+$('#productModal').on('click',function(e){if(e.target===this)closeProductModal();});
+function switchModalView(v){$('#modalEmoji').css('transform',v==='side'?'rotateY(90deg)':v==='top'?'rotateX(90deg)':v==='angle'?'rotateY(45deg) rotateX(20deg)':'rotateY(0)');}
+function rotateModalProduct(d){modalRotation+=d*30;$('#modalEmoji').css('transform','rotateY('+modalRotation+'deg)');}
+function zoomModalProduct(d){modalZoom=Math.max(0.5,Math.min(2,modalZoom+d*0.2));$('#modalEmoji').css('transform','scale('+modalZoom+')');}
+
+// ---- Lightbox ----
+function openLightbox(i){currentLightbox=i;$('#lightboxContent').text(galleryEmojis[i]);$('#lightbox').addClass('show');$('body').css('overflow','hidden');}
+function closeLightbox(){$('#lightbox').removeClass('show');$('body').css('overflow','');}
+function navigateLightbox(d){currentLightbox=(currentLightbox+d+galleryEmojis.length)%galleryEmojis.length;$('#lightboxContent').text(galleryEmojis[currentLightbox]);}
+$('#lightbox').on('click',function(e){if(e.target===this)closeLightbox();});
+$(document).on('keydown',function(e){if(!$('#lightbox').hasClass('show'))return;if(e.key==='ArrowLeft')navigateLightbox(-1);if(e.key==='ArrowRight')navigateLightbox(1);if(e.key==='Escape')closeLightbox();if(!$('#productModal').hasClass('show'))return;if(e.key==='Escape')closeProductModal();});
+
+// ---- FAQ ----
+$('.faq-question').on('click',function(){$(this).closest('.faq-item').toggleClass('active');});
+
+// ---- Image Zoom ----
+$('.zoom-section').each(function(){
+    var $area=$(this),$content=$area.find('.zoom-content');
+    $area.on('mousemove',function(e){
+        var rect=this.getBoundingClientRect();var x=e.clientX-rect.left;var y=e.clientY-rect.top;
+        $content.css('transform','scale(2.5) translate('+(rect.width/2-x)/15+'px,'+(rect.height/2-y)/15+'px)');
+    }).on('mouseleave',function(){$content.css('transform','scale(1)');});
+});
+
+// ---- Customizer ----
+function updateCustomizerPreview(){var n=$('#customNameInput').val()||'Your Name';$('#customizerPreview').text(n);}
+function selectFont(btn,font){$('.font-option').removeClass('active');$(btn).addClass('active');$('#customizerPreview').css('font-family',font);}
+function selectColor(btn,color){$('.color-option').removeClass('active');$(btn).addClass('active');$('#customizerPreview').css('color',color);}
+function selectSize(btn){$(btn).closest('.size-options').find('.size-option').removeClass('active');$(btn).addClass('active');}
+function selectCustomizerProduct(btn,name){$('.size-option',btn.parentNode).removeClass('active');$(btn).addClass('active');}
+
+// ---- Three.js 3D Viewer ----
+(function(){
+    var container=document.getElementById('threejsContainer');if(!container||typeof THREE==='undefined')return;
+    var w=container.clientWidth,h=container.clientHeight;
+    var scene=new THREE.Scene();scene.background=new THREE.Color(0xf0f4ff);
+    var camera=new THREE.PerspectiveCamera(45,w/h,0.1,1000);camera.position.set(0,2,6);
+    var renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(w,h);renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));renderer.shadowMap.enabled=true;container.appendChild(renderer.domElement);
+
+    // Lights
+    var amb=new THREE.AmbientLight(0xffffff,0.5);scene.add(amb);
+    var dir=new THREE.DirectionalLight(0xffffff,0.8);dir.position.set(5,10,5);dir.castShadow=true;scene.add(dir);
+    var pt=new THREE.PointLight(0x6366f1,0.4,20);pt.position.set(-3,3,3);scene.add(pt);
+
+    // Product: Moon sphere
+    var productGroup=new THREE.Group();
+    var geo=new THREE.SphereGeometry(1.5,64,64);
+    var mat=new THREE.MeshStandardMaterial({color:0xf5f5f4,roughness:0.7,metalness:0.1});
+    var sphere=new THREE.Mesh(geo,mat);sphere.castShadow=true;sphere.receiveShadow=true;productGroup.add(sphere);
+
+    // Craters
+    for(var i=0;i<20;i++){
+        var cg=new THREE.SphereGeometry(0.05+Math.random()*0.12,16,16);
+        var cm=new THREE.MeshStandardMaterial({color:0xe5e5e5,roughness:0.9});
+        var crater=new THREE.Mesh(cg,cm);
+        var theta=Math.random()*Math.PI*2,phi=Math.random()*Math.PI;
+        crater.position.set(1.52*Math.sin(phi)*Math.cos(theta),1.52*Math.cos(phi),1.52*Math.sin(phi)*Math.sin(theta));
+        productGroup.add(crater);
+    }
+
+    // Glow ring
+    var ringGeo=new THREE.TorusGeometry(2,0.02,16,100);
+    var ringMat=new THREE.MeshStandardMaterial({color:0x2563EB,emissive:0x2563EB,emissiveIntensity:0.5,transparent:true,opacity:0.6});
+    var ring=new THREE.Mesh(ringGeo,ringMat);ring.rotation.x=Math.PI/2;productGroup.add(ring);
+
+    // Ground
+    var groundGeo=new THREE.PlaneGeometry(20,20);var groundMat=new THREE.MeshStandardMaterial({color:0xf8fafc});
+    var ground=new THREE.Mesh(groundGeo,groundMat);ground.rotation.x=-Math.PI/2;ground.position.y=-2;ground.receiveShadow=true;scene.add(ground);
+
+    scene.add(productGroup);
+
+    // OrbitControls (inline minimal)
+    var isDragging=false,prevMouse={x:0,y:0},rotX=0,rotY=0,autoRotate=true,camDist=6;
+    container.addEventListener('mousedown',function(e){isDragging=true;prevMouse={x:e.clientX,y:e.clientY};});
+    container.addEventListener('mousemove',function(e){if(!isDragging)return;var dx=e.clientX-prevMouse.x,dy=e.clientY-prevMouse.y;rotY+=dx*0.01;rotX+=dy*0.01;rotX=Math.max(-1,Math.min(1,rotX));prevMouse={x:e.clientX,y:e.clientY};});
+    container.addEventListener('mouseup',function(){isDragging=false;});
+    container.addEventListener('mouseleave',function(){isDragging=false;});
+    container.addEventListener('wheel',function(e){e.preventDefault();camDist+=e.deltaY*0.01;camDist=Math.max(3,Math.min(12,camDist));},{passive:false});
+    // Touch
+    container.addEventListener('touchstart',function(e){if(e.touches.length===1){isDragging=true;prevMouse={x:e.touches[0].clientX,y:e.touches[0].clientY};}},{passive:true});
+    container.addEventListener('touchmove',function(e){if(!isDragging||e.touches.length!==1)return;var dx=e.touches[0].clientX-prevMouse.x,dy=e.touches[0].clientY-prevMouse.y;rotY+=dx*0.01;rotX+=dy*0.01;rotX=Math.max(-1,Math.min(1,rotX));prevMouse={x:e.touches[0].clientX,y:e.touches[0].clientY};},{passive:true});
+    container.addEventListener('touchend',function(){isDragging=false;});
+
+    function animate(){requestAnimationFrame(animate);if(autoRotate&&!isDragging)rotY+=0.003;productGroup.rotation.y=rotY;productGroup.rotation.x=rotX;camera.position.z=camDist;camera.lookAt(0,0,0);ring.rotation.z+=0.005;renderer.render(scene,camera);}
+    animate();
+
+    window.toggleAutoRotate=function(){autoRotate=!autoRotate;$('#btnAutoRotate').toggleClass('active',autoRotate);};
+    window.resetCamera=function(){rotX=0;rotY=0;camDist=6;};
+    window.zoomIn=function(){camDist=Math.max(3,camDist-1);};
+    window.zoomOut=function(){camDist=Math.min(12,camDist+1);};
+    window.toggleFullscreen=function(){var el=container.parentElement;if(document.fullscreenElement)document.exitFullscreen();else el.requestFullscreen&&el.requestFullscreen();};
+    window.switchViewerProduct=function(type){
+        if(type==='moon'){sphere.material.color.setHex(0xf5f5f4);sphere.scale.set(1,1,1);}
+        else if(type==='gear'){sphere.material.color.setHex(0x94A3B8);sphere.scale.set(0.8,0.8,0.8);}
+        else{sphere.material.color.setHex(0xFDE68A);sphere.scale.set(1,0.3,1);}
+    };
+
+    $(window).on('resize',function(){var w2=container.clientWidth,h2=container.clientHeight;camera.aspect=w2/h2;camera.updateProjectionMatrix();renderer.setSize(w2,h2);});
+})();
+</script>
+</body>
+</html>

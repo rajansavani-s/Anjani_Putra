@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Anjani Putra - Get a quote for 3D printing, prototyping, mechanical parts, customized gifts and more.">
+    <title>Contact Us | Anjani Putra</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- HEADER -->
+    <nav class="main-navbar scrolled" id="mainNavbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/iconlogo.png" alt="Anjani Putra" class="logo-img">
+                <span>ANJANI</span> PUTRA
+            </a>
+            <div class="navbar-center" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </div>
+            <div class="navbar-right">
+                <a href="tel:+919727689920" class="btn-call">
+                    <i class="fas fa-phone"></i>
+                    +91 9727689920
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="page-hero-shape page-hero-shape-1"></div>
+            <div class="page-hero-shape page-hero-shape-2"></div>
+            <div class="page-hero-shape page-hero-shape-3"></div>
+            <div class="page-hero-pattern"></div>
+            <div class="page-hero-3d-shape shape-1">✉️</div>
+            <div class="page-hero-3d-shape shape-2">💬</div>
+            <div class="page-hero-3d-shape shape-3">📞</div>
+            <div class="page-hero-3d-shape shape-4">🤝</div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content" data-aos="fade-up">
+                <span class="section-label">Contact Us</span>
+                <h1 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h1>
+                <p class="section-subtitle">Have an idea, prototype or custom product requirement? Reach out and let's discuss your project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- LEFT: Contact Form -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-form-card">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill in the details below and we'll get back to you within 24 hours.</p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" class="form-control-custom" placeholder="Enter your full name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" class="form-control-custom" placeholder="+91 XXXXX XXXXX" required>
+                                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" class="form-control-custom" placeholder="you@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Required <span class="required">*</span></label>
+                                <select id="service" class="form-control-custom" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="3D Printing">3D Printing</option>
+                                    <option value="Rapid Prototyping">Rapid Prototyping</option>
+                                    <option value="Mechanical Parts">Mechanical Parts</option>
+                                    <option value="3D Modeling">3D Modeling</option>
+                                    <option value="Educational Models">Educational Models</option>
+                                    <option value="Small Batch Production">Small Batch Production</option>
+                                    <option value="Customized Gift Products">Customized Gift Products</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a service.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Project Description <span class="required">*</span></label>
+                                <textarea id="description" class="form-control-custom" placeholder="Describe your project, requirements, quantity, timeline..." required></textarea>
+                                <div class="invalid-feedback">Please describe your project.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Upload Reference File <span style="font-weight:400; color: var(--gray-400);">(optional)</span></label>
+                                <div class="file-upload-area" id="fileUploadArea">
+                                    <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg,.stl,.obj,.step,.iges">
+                                    <div class="file-upload-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+                                    <div class="file-upload-text"><strong>Click to upload</strong> or drag and drop</div>
+                                    <div class="file-upload-hint">PDF, PNG, JPG, STL, OBJ, STEP (Max 10MB)</div>
+                                    <div class="file-name" id="fileName"></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-submit" id="submitBtn">
+                                <span class="btn-text"><i class="fab fa-whatsapp"></i> Send via WhatsApp</span>
+                                <span class="spinner"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Contact Info -->
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <div class="contact-info-stack">
+
+                        <!-- Owner Card -->
+                        <div class="owner-card">
+                            <div class="owner-avatar">RS</div>
+                            <div class="owner-name">Mr. Rajan Savani</div>
+                            <div class="owner-role">Founder & Owner</div>
+                            <div class="owner-tagline">"Precision In Every Dimension"</div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="contact-info-label">Phone</div>
+                                <div class="contact-info-value"><a href="tel:+919727689920">+91 9727689920</a></div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-info-label">Email</div>
+                                <div class="contact-info-value"><a href="mailto:anjani.putra.177@gmail.com">anjani.putra.177@gmail.com</a></div>
+                            </div>
+                        </div>
+
+                        <!-- Business -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fas fa-building"></i></div>
+                            <div>
+                                <div class="contact-info-label">Business</div>
+                                <div class="contact-info-value">Anjani Putra</div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="contact-cta-btns">
+                            <a href="https://wa.me/919727689920" target="_blank" class="btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="tel:+919727689920" class="btn-call-contact">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES QUICK SELECT -->
+    <section class="section-padding" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="services-header" data-aos="fade-up">
+                <span class="section-label">Quick Select</span>
+                <h2 class="section-title">What Do You <span class="gradient-text">Need?</span></h2>
+                <p class="section-subtitle">Click a service to auto-fill the contact form above.</p>
+            </div>
+
+            <div class="service-quick-grid">
+                <div class="service-quick-card" data-service="3D Printing" data-aos="fade-up" data-aos-delay="0">
+                    <span class="service-quick-icon">🖨️</span>
+                    <h4>3D Printing</h4>
+                </div>
+                <div class="service-quick-card" data-service="Rapid Prototyping" data-aos="fade-up" data-aos-delay="50">
+                    <span class="service-quick-icon">⚡</span>
+                    <h4>Rapid Prototyping</h4>
+                </div>
+                <div class="service-quick-card" data-service="Mechanical Parts" data-aos="fade-up" data-aos-delay="100">
+                    <span class="service-quick-icon">⚙️</span>
+                    <h4>Mechanical Parts</h4>
+                </div>
+                <div class="service-quick-card" data-service="3D Modeling" data-aos="fade-up" data-aos-delay="150">
+                    <span class="service-quick-icon">📐</span>
+                    <h4>3D Modeling</h4>
+                </div>
+                <div class="service-quick-card" data-service="Educational Models" data-aos="fade-up" data-aos-delay="200">
+                    <span class="service-quick-icon">🎓</span>
+                    <h4>Educational Models</h4>
+                </div>
+                <div class="service-quick-card" data-service="Small Batch Production" data-aos="fade-up" data-aos-delay="250">
+                    <span class="service-quick-icon">📦</span>
+                    <h4>Small Batch Production</h4>
+                </div>
+                <div class="service-quick-card" data-service="Customized Gift Products" data-aos="fade-up" data-aos-delay="300">
+                    <span class="service-quick-icon">🎁</span>
+                    <h4>Customized Gifts</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CONTACT US -->
+    <section class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div class="services-header" data-aos="fade-up">
+                <span class="section-label">Benefits</span>
+                <h2 class="section-title">Why <span class="gradient-text">Contact Us</span></h2>
+            </div>
+
+            <div class="contact-why-grid">
+                <div class="contact-why-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="contact-why-icon"><i class="fas fa-clock"></i></div>
+                    <h4>Quick Response</h4>
+                </div>
+                <div class="contact-why-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="contact-why-icon"><i class="fas fa-comments"></i></div>
+                    <h4>Custom Consultation</h4>
+                </div>
+                <div class="contact-why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-why-icon"><i class="fas fa-user-tie"></i></div>
+                    <h4>Professional Guidance</h4>
+                </div>
+                <div class="contact-why-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="contact-why-icon"><i class="fas fa-lock"></i></div>
+                    <h4>Project Confidentiality</h4>
+                </div>
+                <div class="contact-why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-why-icon"><i class="fas fa-sliders"></i></div>
+                    <h4>Flexible Manufacturing</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="services-header" data-aos="fade-up">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Common <span class="gradient-text">Questions</span></h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active" data-aos="fade-up" data-aos-delay="0">
+                    <button class="faq-question">
+                        How quickly will I receive a response?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            We typically respond within 24 hours during business days. For urgent requirements, you can reach us directly via phone or WhatsApp for immediate assistance.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question">
+                        Can I discuss a custom project?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Absolutely. We specialize in custom projects. Share your concept and our team will provide design consultation, material recommendations and a detailed quotation.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        Can I submit design files?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes. You can upload reference files in PDF, PNG, JPG, STL, OBJ or STEP format through our contact form. You can also share files via WhatsApp or email.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <button class="faq-question">
+                        Do you support business orders?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes. We support both individual and business orders including bulk production, corporate gifts and ongoing manufacturing partnerships with competitive pricing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" style="background: var(--white);">
+        <div class="container">
+            <div class="cta-box" data-aos="zoom-in" data-aos-duration="800">
+                <div class="cta-content">
+                    <h2>Ready To Turn Your Idea Into Reality?</h2>
+                    <p>Get in touch today and start your project with confidence.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/919727689920" target="_blank" class="btn-outline-white">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                        <a href="#contactForm" class="btn-primary-custom" style="background: white; color: var(--primary); box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                            <i class="fas fa-paper-plane"></i> Request Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/iconlogo.png" alt="Anjani Putra" class="logo-img">
+                        ANJANI <span>PUTRA</span>
+                    </div>
+                    <p class="footer-tagline">"Precision In Every Dimension"</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919727689920" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">3D Printing</a></li>
+                        <li><a href="services.html">Rapid Prototyping</a></li>
+                        <li><a href="services.html">Mechanical Parts</a></li>
+                        <li><a href="services.html">3D Modeling</a></li>
+                        <li><a href="services.html">Educational Models</a></li>
+                        <li><a href="services.html">Customized Gifts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919727689920">+91 9727689920</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:anjani.putra.177@gmail.com">anjani.putra.177@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/919727689920" target="_blank">WhatsApp Us</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <a href="#" target="_blank">@anjani.putra</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anjani Putra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/919727689920" target="_blank" class="floating-btn float-whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="pulse-ring"></span>
+        </a>
+        <a href="tel:+919727689920" class="floating-btn float-call" aria-label="Call">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast">
+        <div class="toast-icon success"><i class="fas fa-check"></i></div>
+        <div>
+            <div class="toast-message">Message Sent Successfully!</div>
+            <div class="toast-sub">We'll respond within 24 hours.</div>
+        </div>
+        <button class="toast-close" id="toastClose"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Success Overlay -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-checkmark"><i class="fas fa-check"></i></div>
+        <h3>Thank You!</h3>
+        <p>Your message has been sent successfully. Our team will get back to you within 24 hours.</p>
+        <a href="index.html" class="btn-primary-custom">Back to Home <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        // ---- FAQ Accordion ----
+        $('.faq-question').on('click', function() {
+            var $item = $(this).closest('.faq-item');
+            var isOpen = $item.hasClass('active');
+            $('.faq-item').removeClass('active');
+            if (!isOpen) { $item.addClass('active'); }
+        });
+
+        // ---- Service Quick Select ----
+        $('.service-quick-card').on('click', function() {
+            var serviceName = $(this).attr('data-service');
+
+            // Update select
+            $('#service').val(serviceName);
+
+            // Update visual state
+            $('.service-quick-card').removeClass('selected');
+            $(this).addClass('selected');
+
+            // Scroll to form
+            $('html, body').animate({
+                scrollTop: $('#contactForm').offset().top - 100
+            }, 500);
+
+            // Toast
+            showToast('Service Selected', serviceName + ' has been selected in the form.');
+        });
+
+        // ---- File Upload ----
+        var $fileArea = $('#fileUploadArea');
+        var $fileInput = $('#fileInput');
+        var $fileName = $('#fileName');
+
+        $fileArea.on('click', function() {
+            $fileInput.trigger('click');
+        });
+
+        $fileArea.on('dragover', function(e) {
+            e.preventDefault();
+            $(this).css('border-color', 'var(--primary)');
+        });
+
+        $fileArea.on('dragleave', function() {
+            $(this).css('border-color', '');
+        });
+
+        $fileArea.on('drop', function(e) {
+            e.preventDefault();
+            $(this).css('border-color', '');
+            var files = e.originalEvent.dataTransfer.files;
+            if (files.length) {
+                handleFile(files[0]);
+            }
+        });
+
+        $fileInput.on('change', function() {
+            if (this.files.length) {
+                handleFile(this.files[0]);
+            }
+        });
+
+        function handleFile(file) {
+            var maxSize = 10 * 1024 * 1024; // 10MB
+            if (file.size > maxSize) {
+                showToast('File Too Large', 'Maximum file size is 10MB.', 'error');
+                return;
+            }
+            $fileName.text('📎 ' + file.name).show();
+            $fileArea.addClass('has-file');
+        }
+
+        // ---- Form Validation & Submit ----
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault();
+            var isValid = true;
+
+            // Reset
+            $('.form-group').removeClass('error');
+            $('.form-control-custom').removeClass('is-invalid is-valid');
+
+            // Validate name
+            var name = $('#fullName').val().trim();
+            if (!name) {
+                $('#fullName').addClass('is-invalid').closest('.form-group').addClass('error');
+                isValid = false;
+            } else {
+                $('#fullName').addClass('is-valid');
+            }
+
+            // Validate phone
+            var phone = $('#phone').val().trim();
+            if (!phone || phone.length < 10) {
+                $('#phone').addClass('is-invalid').closest('.form-group').addClass('error');
+                isValid = false;
+            } else {
+                $('#phone').addClass('is-valid');
+            }
+
+            // Validate email
+            var email = $('#email').val().trim();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                $('#email').addClass('is-invalid').closest('.form-group').addClass('error');
+                isValid = false;
+            } else {
+                $('#email').addClass('is-valid');
+            }
+
+            // Validate service
+            var service = $('#service').val();
+            if (!service) {
+                $('#service').addClass('is-invalid').closest('.form-group').addClass('error');
+                isValid = false;
+            } else {
+                $('#service').addClass('is-valid');
+            }
+
+            // Validate description
+            var desc = $('#description').val().trim();
+            if (!desc) {
+                $('#description').addClass('is-invalid').closest('.form-group').addClass('error');
+                isValid = false;
+            } else {
+                $('#description').addClass('is-valid');
+            }
+
+            if (!isValid) {
+                showToast('Please Fix Errors', 'Some required fields are missing.', 'error');
+                return;
+            }
+
+            // Show loading
+            var $btn = $('#submitBtn');
+            $btn.addClass('loading').prop('disabled', true);
+
+            // Simulate submission
+            var waMsg = '*New Inquiry from Anjani Putra Website*%0A%0A';
+            waMsg += '*Name:* ' + encodeURIComponent(name) + '%0A';
+            waMsg += '*Phone:* ' + encodeURIComponent(phone) + '%0A';
+            waMsg += '*Email:* ' + encodeURIComponent(email) + '%0A';
+            waMsg += '*Service:* ' + encodeURIComponent(service) + '%0A';
+            waMsg += '*Project Details:* ' + encodeURIComponent(desc) + '%0A';
+            if ($('#fileName').is(':visible')) {
+                waMsg += '*File:* ' + encodeURIComponent($('#fileName').text().replace('📎 ', '')) + '%0A';
+            }
+            waMsg += '%0A_Sent from Anjani Putra Website_';
+            setTimeout(function() {
+                $btn.removeClass('loading').prop('disabled', false);
+                // Open WhatsApp with form data
+                window.open('https://wa.me/919727689920?text=' + waMsg, '_blank');
+                $('#successOverlay').addClass('show');
+                // Reset form
+                $('#contactForm')[0].reset();
+                $('.form-control-custom').removeClass('is-valid is-invalid');
+                $('.form-group').removeClass('error');
+                $fileName.hide();
+                $fileArea.removeClass('has-file');
+                $('.service-quick-card').removeClass('selected');
+            }, 1500);
+        });
+
+        // ---- Toast ----
+        function showToast(title, sub, type) {
+            var $toast = $('#toast');
+            $toast.find('.toast-message').text(title);
+            $toast.find('.toast-sub').text(sub || '');
+            var iconClass = type === 'error' ? 'error' : 'success';
+            var iconFa = type === 'error' ? 'fas fa-exclamation' : 'fas fa-check';
+            $toast.find('.toast-icon').attr('class', 'toast-icon ' + iconClass).html('<i class="' + iconFa + '"></i>');
+            $toast.addClass('show');
+            setTimeout(function() { $toast.removeClass('show'); }, 4000);
+        }
+
+        $('#toastClose').on('click', function() {
+            $('#toast').removeClass('show');
+        });
+
+        // ---- Close success overlay on outside click ----
+        $('#successOverlay').on('click', function(e) {
+            if (e.target === this) {
+                $(this).removeClass('show');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
